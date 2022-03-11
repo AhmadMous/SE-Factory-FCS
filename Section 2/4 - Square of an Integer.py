@@ -6,9 +6,9 @@
 
 # Thought process:
 # - The output should be in the form of '4 + 4 + 4 + 4 = 16'
-# - and it should work for 0, as in '0 = 0'
+# - It should also work for 0, as in '0 = 0'
 # - Thus we start with string value of input number not 0
-# - And we loop adding " + " + input_string each time for 1 time less than input number
+# - We loop adding " + " + input_string each time for 1 time less than input number
 # - Finally, we add ' = ' + string value of the total to the resultant string
 
 def sum(input_number):
