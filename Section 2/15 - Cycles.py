@@ -1,3 +1,6 @@
+Thought process:
+- 
+
 def cycles(indices):
     visited = set()
     cycles = []
