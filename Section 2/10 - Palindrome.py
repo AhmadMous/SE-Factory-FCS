@@ -1,25 +1,22 @@
-def palindrome(input_str):
-    n = len(input_str)
-    if n == 1:
-        return True
-    for ch in range((n+1)//2):
-        if input_str[ch] != input_str[-1-ch]:
+def palindrome(string):
+    n = len(string)
+    for char in range(n // 2):
+        if string[char] != string[-1 - char]:
             return False
     return True
 
-def max_sub_palindrome(input_str):
-    strlen = len(input_str)
-    if strlen == 1:
-        return input_str[0]
-        
-    elif palindrome(input_str):
-        return input_str
+def max_sub_palindrome(string):
+    strlen = len(string)
+    if palindrome(string):
+        return string
 
     else:
         for i in range(0, strlen):
-            if len(input_str[:strlen-1-i]) == 1:
-                return input_str[:strlen-1-i]
+            x = string[:strlen-1-i]
+            if len(x) == 1:
+                return x
             else:
                 for j in range(1+i):
-                    if palindrome(input_str[j:strlen -i+j]):
-                        return input_str[j:strlen-i+j]
+                    y = string[j:strlen-i+j]
+                    if palindrome(y):
+                        return y
