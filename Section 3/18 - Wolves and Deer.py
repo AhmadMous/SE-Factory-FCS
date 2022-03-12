@@ -5,8 +5,6 @@
 # - We increment one year at a time, updating "greatest" variable as necessary
 
 def wolves_and_dear(deer_0, wolves_0, deer_growth, deer_predation, wolves_predation, wolves_decay, dt, n):
-    # Simulates the system one step at a time
-    # Returns a single value, which is the maximum number of wolves that was ever encountered in the simulation
 
     # Track number of wolves, deer. Indexed by year starting with year = 0
     wolves = [wolves_0]
