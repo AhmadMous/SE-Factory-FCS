@@ -7,7 +7,7 @@
 
 def reverse_digits(n):
 
-    # Using count digits from last excercise, note: Iterative is faster
+    # Using count digits from last excercise, note: Iterative is faster. casting to string and getting length also works
     def count_digits(n):
         if n == 0:
             return 0
