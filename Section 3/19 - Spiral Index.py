@@ -46,5 +46,4 @@ def spiral_index(x, y):
             # No match, decrement index, and update coordinates
             else:
                 index -= 1
-
                 coordinates = (coordinates[0] + increment[0], coordinates[1] + increment[1])
