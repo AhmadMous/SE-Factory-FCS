@@ -28,7 +28,8 @@ def spiral_index(x, y):
     # Spiral index of anchor point, we will iterate from it
     index = anchorsv[distance]
 
-    # We intend to proceed along the 4 lines
+
+    # Iterate along the 4 lines
     for corner in range(4):
 
         # Setting direction of coordinates incrementation
@@ -37,7 +38,7 @@ def spiral_index(x, y):
         # Iterate over all points of that line, then change direction to stay on ring
         for i in range(distance * 2):
 
-            # We reach intended coordinates coordinates
+            # We reach intended coordinates
             if coordinates == (x, y):
                 print("Spiral index of", (x, y), "is", str(index) + ".")
                 return index
@@ -45,4 +46,5 @@ def spiral_index(x, y):
             # No match, decrement index, and update coordinates
             else:
                 index -= 1
+
                 coordinates = (coordinates[0] + increment[0], coordinates[1] + increment[1])
