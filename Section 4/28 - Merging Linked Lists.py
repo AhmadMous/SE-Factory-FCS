@@ -171,7 +171,7 @@ def test_ll():
         new_node = Node(i)
         test_list2.add_at_head(new_node)
 
-    # Merge the resultant and view it backwards
+    # Merge the resultant and view it
     merge_list = merge_linked_lists(test_list, test_list2)
     test_list.print_list()
     test_list2.print_list()
