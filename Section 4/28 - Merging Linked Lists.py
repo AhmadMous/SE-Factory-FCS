@@ -173,6 +173,8 @@ def test_ll():
 
     # Merge the resultant and view it backwards
     merge_list = merge_linked_lists(test_list, test_list2)
-    merge_list.print_backward()
+    test_list.print_list()
+    test_list2.print_list()
+    merge_list.print_list()
 
 test_ll()
